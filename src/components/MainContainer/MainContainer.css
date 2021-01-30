@@ -1,0 +1,73 @@
+.iphone12{
+    width:50%;
+    margin:auto;
+    z-index: 1;
+    position: relative;
+    bottom:-20%;
+    margin-bottom: -20%;
+    overflow: hidden; 
+}
+.ground{
+    background-color:#fff;
+    padding:5px;
+    position:relative;
+    z-index: 2;
+    color:white;
+    /* bottom:0;
+
+   left:0;
+    right:0;
+    margin-bottom: -20%;
+    color:white;
+     */
+}
+.ground1{
+    background-color:#000;
+    position:relative;
+    z-index: 4;
+    color:#fff;
+}
+.iphone122{
+    width:40%;
+    margin:auto;
+    /* position: relative;
+    bottom:-20%;
+    margin-bottom: -20%;
+    overflow: hidden;  */
+}
+.iwatch{
+    width:20%;
+    margin:auto;
+
+}
+.ipdad{
+  width:50%;
+   height:0%;
+ padding: 50px 50px 180px 50px;
+}
+.fitcard{
+    width:50%;
+    height:70%;
+    /* margin:auto; */
+    padding:50px ;
+}
+
+@media(max-width:640px){
+    .iphone12{
+        margin-bottom: 0%;
+    }
+    .iwatch, .iphone12, .iphone122{
+        width:60%;
+    }
+    .ipdad, .fitcard{
+        width:100%;
+        padding:0%;
+    }
+    .valentine{
+        width:60%;
+        margin:0px auto;
+    }
+    /* .iphone{
+        width:100%;
+    } */
+}
