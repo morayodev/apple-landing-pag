@@ -1,10 +1,10 @@
 .SideDrawer {
     position: fixed;
     width: 100%;
-    height: 100%;
     left: 0;
-    top: 0;
     z-index: 200;
+        height: calc(100% - 50px);
+    bottom: 0;
     background-color: #000;
     /* padding: 32px 16px; */
     box-sizing: border-box;
@@ -25,7 +25,7 @@
 }
 
 .Close {
-    transform: translateY(-100%);
+    transform: translateY(-150%);
 }
 /* 
   /* display: block;

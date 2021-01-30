@@ -1,25 +1,28 @@
 import React,{useState} from 'react';
 import "./Sidedrawer.css";
 import "../CountryType/CountryType.css";
-import { BsSearch } from "react-icons/bs";
+import { AiOutlineSearch } from "react-icons/ai";
 
 function Sidedrawer(props) {
   const [input, setInput]=useState("")
     return (
       <div
-        className={(props.open ? "Open" : "Close") + " SideDrawer"}
-        onClick={props.closed}
-      >
-        <input
-          type="text"
-          placeholder="Search apple.com "
-          value={input}
-          onChange={(event) => {
-            setInput(event.target.value)
-          }}
+        className={(props.open ? "Open" : "Close") + " SideDrawer px-2"}
        
-          className="Countrybg CountryType p-3 rounded-lg my-5 ml-4"
-        />
+      >
+        <div className="flex items-center Countrybg p-3 rounded-lg my-5">
+          <AiOutlineSearch className="text-white text-xl" />
+          <input
+            type="text"
+            placeholder="Search apple.com "
+            value={input}
+            onChange={(event) => {
+              setInput(event.target.value);
+            }}
+            className=" w-full  ml-4 outline-none bg-transparent"
+          />
+        </div>
+
         <div className="border-b "></div>
         <div className="">
           <ul className="text-white pl-10">
@@ -35,5 +38,7 @@ function Sidedrawer(props) {
       </div>
     );
 }
+         
+
 
 export default Sidedrawer

@@ -1,6 +1,10 @@
-import React from 'react'
+import React,{useState} from 'react';
+import {HiPlus} from "react-icons/hi"
+import Footerlinks from "./Footerlinks";
+
 
 function Lastcontanier() {
+ 
     return (
       <>
         <div style={{ backgroundColor: "#FBFBFD" }}>
@@ -49,122 +53,121 @@ function Lastcontanier() {
                 Apple Card is issued by Goldman Sachs Bank USA, Salt Lake City
                 Branch.
               </li>
-              <li className="mb-2  border-b-2">
+              <li className="pb-5 border-b-2">
                 Apple TV+ is $4.99/month after free trial. One subscription per
                 Family Sharing group. Offer good for 3 months after eligible
                 device activation. Plan automatically renews until cancelled.
                 Restrictions and other terms apply.
               </li>
             </ul>
-            <div className="flex justify-between mt-5">
-              <div>
-                <ul style={{ color: "#747b82" }}>
-                  <li className="font-semibold" style={{ color: "#3b3f44" }}>
-                    Shop and Learn
-                  </li>
-                  <li>Mac </li>
-                  <li>iPad</li>
-                  <li>iPhone </li>
-                  <li>Watch</li>
-                  <li>TV </li>
-                  <li>Music</li>
-                  <li>AirPods</li>
-                  <li>HomePod</li>
-                  <li>iPdod touch </li>
-                  <li>Accessories </li>
-                  <li>Gift Cards</li>
-                </ul>
-              </div>
-              <div>
-                <div className="flex flex-col">
-                  <div>
-                    <ul className="mb-10" style={{ color: "#747b82" }}>
-                      <li
-                        className="font-semibold"
-                        style={{ color: "#3b3f44" }}
-                      >
-                        Shop and Learn
-                      </li>
-                      <li>Mac </li>
-                      <li>iPad</li>
-                      <li>iPhone </li>
-                      <li>Watch</li>
-                      <li>TV </li>
-                      <li>Music</li>
-                      <li>AirPods</li>
-                      <li>HomePod</li>
-                      <li>iPdod touch </li>
-                      <li>Accessories </li>
-                      <li>Gift Cards</li>
-                    </ul>
-                  </div>
-                </div>
-                <div>
-                  <ul style={{ color: "#747b82" }}>
-                    <li className="font-semibold" style={{ color: "#3b3f44" }}>
-                      Account
-                    </li>
-                    <li>Manage Your Apple ID Apple </li>
-                    <li>Store Account</li>
-                    <li> iCloud.com</li>
-                  </ul>
-                </div>
-              </div>
-              <div>
-                <ul style={{ color: "#747b82" }}>
-                  <li className="font-semibold" style={{ color: "#3b3f44" }}>
-                    Shop and Learn
-                  </li>
-                  <li>Mac </li>
-                  <li>iPad</li>
-                  <li>iPhone </li>
-                  <li>Watch</li>
-                  <li>TV </li>
-                  <li>Music</li>
-                  <li>AirPods</li>
-                  <li>HomePod</li>
-                  <li>iPdod touch </li>
-                  <li>Accessories </li>
-                  <li>Gift Cards</li>
-                </ul>
-              </div>
-              <div>
-                <ul style={{ color: "#747b82" }}>
-                  <li className="font-semibold" style={{ color: "#3b3f44" }}>
-                    Shop and Learn
-                  </li>
-                  <li>Mac </li>
-                  <li>iPad</li>
-                  <li>iPhone </li>
-                  <li>Watch</li>
-                  <li>TV </li>
-                  <li>Music</li>
-                  <li>AirPods</li>
-                  <li>HomePod</li>
-                  <li>iPdod touch </li>
-                  <li>Accessories </li>
-                  <li>Gift Cards</li>
-                </ul>
-              </div>
-              <div>
-                <ul style={{ color: "#747b82" }}>
-                  <li className="font-semibold" style={{ color: "#3b3f44" }}>
-                    Shop and Learn
-                  </li>
-                  <li>Mac </li>
-                  <li>iPad</li>
-                  <li>iPhone </li>
-                  <li>Watch</li>
-                  <li>TV </li>
-                  <li>Music</li>
-                  <li>AirPods</li>
-                  <li>HomePod</li>
-                  <li>iPdod touch </li>
-                  <li>Accessories </li>
-                  <li>Gift Cards</li>
-                </ul>
-              </div>
+            <div className="flex-col md:flex-row flex justify-between mt-5">
+              {/* <div className="border-b-2 py-2"> */}
+                <Footerlinks title="Shop and Learn">
+                  <li className="py-1">Mac </li>
+                  <li className="py-1">iPad</li>
+                  <li className="py-1">iPhone </li>
+                  <li className="py-1">Watch</li>
+                  <li className="py-1">TV </li>
+                  <li className="py-1">Music</li>
+                  <li className="py-1">AirPods</li>
+                  <li className="py-1">HomePod</li>
+                  <li className="py-1">iPdod touch </li>
+                  <li className="py-1">Accessories </li>
+                  <li className=" py-1">Gift Cards</li>
+                </Footerlinks>
+              {/* </div> */}
+              {/* <div className="border-b-2 py-2 md:border-b-0"> */}
+                <Footerlinks title="Shop and Learn">
+                  <li className="py-1">Mac </li>
+                  <li className="py-1">iPad</li>
+                  <li className="py-1">iPhone </li>
+                  <li className="py-1">Watch</li>
+                  <li className="py-1">TV </li>
+                  <li className="py-1">Music</li>
+                  <li className="py-1">AirPods</li>
+                  <li className="py-1">HomePod</li>
+                  <li className="py-1">iPdod touch </li>
+                  <li className="py-1">Accessories </li>
+                  <li className=" py-1">Gift Cards</li>
+                </Footerlinks>
+              {/* </div> */}
+              {/* <div > */}
+                <Footerlinks title="Shop and Learn">
+                  <li className="py-1">Mac </li>
+                  <li className="py-1">iPad</li>
+                  <li className="py-1">iPhone </li>
+                  <li className="py-1">Watch</li>
+                  <li className="py-1">TV </li>
+                  <li className="py-1">Music</li>
+                  <li className="py-1">AirPods</li>
+                  <li className="py-1">HomePod</li>
+                  <li className="py-1">iPdod touch </li>
+                  <li className="py-1">Accessories </li>
+                  <li className=" py-1">Gift Cards</li>
+                </Footerlinks>
+              {/* </div>
+              <div className="border-b-2 py-2 "> */}
+                <Footerlinks title="Shop and Learn">
+                  <li className="py-1">Mac </li>
+                  <li className="py-1">iPad</li>
+                  <li className="py-1">iPhone </li>
+                  <li className="py-1">Watch</li>
+                  <li className="py-1">TV </li>
+                  <li className="py-1">Music</li>
+                  <li className="py-1">AirPods</li>
+                  <li className="py-1">HomePod</li>
+                  <li className="py-1">iPdod touch </li>
+                  <li className="py-1">Accessories </li>
+                  <li className=" py-1">Gift Cards</li>
+                </Footerlinks>
+              {/* </div>
+              <div className="border-b-2 py-2"> */}
+                <Footerlinks title="Shop and Learn">
+                  <li className="py-1">Mac </li>
+                  <li className="py-1">iPad</li>
+                  <li className="py-1">iPhone </li>
+                  <li className="py-1">Watch</li>
+                  <li className="py-1">TV </li>
+                  <li className="py-1">Music</li>
+                  <li className="py-1">AirPods</li>
+                  <li className="py-1">HomePod</li>
+                  <li className="py-1">iPdod touch </li>
+                  <li className="py-1">Accessories </li>
+                  <li className=" py-1">Gift Cards</li>
+                </Footerlinks>
+              {/* </div>
+              <div className="border-b-2 py-2"> */}
+                <Footerlinks title="Shop and Learn">
+                  <li className="py-1">Mac </li>
+                  <li className="py-1">iPad</li>
+                  <li className="py-1">iPhone </li>
+                  <li className="py-1">Watch</li>
+                  <li className="py-1">TV </li>
+                  <li className="py-1">Music</li>
+                  <li className="py-1">AirPods</li>
+                  <li className="py-1">HomePod</li>
+                  <li className="py-1">iPdod touch </li>
+                  <li className="py-1">Accessories </li>
+                  <li className=" py-1">Gift Cards</li>
+                </Footerlinks>
+              {/* </div>
+              <div className="border-b-2 py-2"> */}
+                <Footerlinks title="Shop and Learn">
+                  <li className="py-1">Mac </li>
+                  <li className="py-1">iPad</li>
+                  <li className="py-1">iPhone </li>
+                  <li className="py-1">Watch</li>
+                  <li className="py-1">TV </li>
+                  <li className="py-1">Music</li>
+                  <li className="py-1">AirPods</li>
+                  <li className="py-1">HomePod</li>
+                  <li className="py-1">iPdod touch </li>
+                  <li className="py-1">Accessories </li>
+                  <li className=" py-1">Gift Cards</li>
+                </Footerlinks>
+              {/* </div> */}
             </div>
+
             <div
               className=" text-xs md:text-sm"
               style={{ backgroundColor: "#FBFBFD" }}
@@ -173,7 +176,8 @@ function Lastcontanier() {
                 More ways to shop: Find an Apple Store or other retailer near
                 you. Or call 1-800-MY-APPLE.
               </h1>
-              <div className="grid grid-column-start: 4 pb-10">
+              <div className=" flex flex-col-reverse md:grid md:grid-column-start: 4 pb-10">
+                
                 <div>
                   <p>Copyright © 2021 Apple Inc. All rights reserved.</p>
                 </div>
@@ -186,7 +190,7 @@ function Lastcontanier() {
                     <p> Site Map</p>
                   </div>
                 </div>
-                <div className="col-end-12">
+                <div className="col-end-12 my-5 md:my-0">
                   <p>United State</p>
                 </div>
               </div>

@@ -5,6 +5,7 @@ import iphone122 from '../images/iphone122';
 import iwatch from "../images/iwatch";
 import Secmaincontainer from './Secmaincontainer'
 import Lastcontanier from "./Lastcontanier";
+import Appleicons from "../Icons/Appleicons";
 
 function MainContainer() {
   return (
@@ -13,7 +14,7 @@ function MainContainer() {
         className="text-center text-sm  py-3"
         style={{ backgroundColor: "#FBFBFD" }}
       >
-        <h1 className="m-auto  w-9/12  sm:w-full">
+        <h1 className="m-auto pt-16  w-9/12  sm:w-full">
           Shop online and get Specialist help, free no‑contact delivery, and
           more.
         </h1>
@@ -68,7 +69,7 @@ function MainContainer() {
         </div>
         <div className="ground"></div>
         <div className="bg-black text-white text-center pt-16 ">
-          <h1 className="text-4xl md:text-4xl font-medium">WATCH</h1>
+          <h1 className="text-4xl md:text-4xl font-medium flex justify-center items-center"><Appleicons/>WATCH</h1>
           <p className="text-red-600	">S E R I E S 6</p>
           <p className="text-xl sm:text-3xl">
             The future of health is on the wrist

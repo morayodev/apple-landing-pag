@@ -51,6 +51,10 @@
     /* margin:auto; */
     padding:50px ;
 }
+.pos{
+    position:fixed;
+}
+
 
 @media(max-width:640px){
     .iphone12{

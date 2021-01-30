@@ -5,13 +5,13 @@ import { BsBag } from "react-icons/bs";
 
 function Icons() {
     return (
-      <div  >
+      <div>
         <ul className="flex justify-evenly items-center">
           <li className="pr-20">
-            <BsSearch />
+            <BsSearch className="text-2xl" />
           </li>
           <li>
-            <BsBag />
+            <BsBag className="text-2xl" />
           </li>
         </ul>
       </div>

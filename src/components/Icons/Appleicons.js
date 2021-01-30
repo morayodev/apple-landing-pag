@@ -4,7 +4,7 @@ function Appleicons() {
     return (
       <div>
       
-            <AiFillApple />
+            <AiFillApple className="text-2xl" />
         
       </div>
     );
